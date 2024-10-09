@@ -682,38 +682,22 @@ h6 {
     background-color: #F1F1F1;
     margin-top: 30px;
     position: relative;
+    overflow: hidden;
 
 }
 
-.section-6 .container::before {
-
+.section-6 .container ::before {
     content: '';
     position: absolute;
-    width: 10px;
-    height: 10px;
+    bottom: 48%;
+    left: -75px;
+    height: 200px;
+    width: 200px;
     background-color: #FF305B;
-    border-radius: 50%;
-    bottom: -13px;
-    left: 55%;
-    cursor: pointer;
+    transform: rotate(68deg);
 }
 
-.section-6 .container::after {
 
-    content: '';
-    position: absolute;
-    width: 20px;
-    height: 9px;
-    background-color: transparent;
-    border: 2px solid #FF305B;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-    bottom: -15px;
-    left: 50%;
-    cursor: pointer;
-}
 
 .section-6 .header {
 
@@ -768,20 +752,20 @@ h6 {
 .section-6 .container .picture {
 
     float: left;
-    width: 30%;
-    /* background: linear-gradient(326deg, rgba(255, 255, 255, 0) 0%, rgb(255, 0, 0) 50%);
-    transform: translate(-9%, -16%); */
+    width: 40%;
 
 
 }
 
 
 
+
 .section-6 .container .picture img {
 
-    width: 50%;
+    width: 65%;
     border-radius: 50%;
-
+    position: relative;
+    z-index: 1;
 
 }
 
@@ -790,7 +774,7 @@ h6 {
 
 .section-6 .container .content {
     padding: 20px;
-    width: 70%;
+    width: 60%;
     float: right;
 
 
@@ -832,6 +816,36 @@ h6 {
 
 
 
+.section-6 .before {
+
+    width: 25px;
+    height: 12px;
+    background-color: transparent;
+    border: 2px solid #FF305B;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    cursor: pointer;
+    margin: auto;
+    margin-top: 10px;
+    position: relative;
+}
+
+.section-6 .before::after {
+    content: '';
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    background-color: #FF305B;
+    border: 2px solid #FF305B;
+    border-radius: 50%;
+    top: 0px;
+    left: 30px;
+    cursor: pointer;
+
+
+}
 
 
 
